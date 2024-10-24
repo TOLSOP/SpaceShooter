@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 2039248668}
   - component: {fileID: 2039248667}
   - component: {fileID: 2039248666}
+  - component: {fileID: 2039248670}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -407,12 +408,26 @@ Transform:
   m_GameObject: {fileID: 2039248665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.67, z: 0}
+  m_LocalPosition: {x: 0, y: -1.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2039248670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039248665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dcc8bcdf8f8748429fe50d690bf8887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3.5
+  laserPrefab: {fileID: 6776544728907470593, guid: 26669fca55c999b4dbd416466b38dc2e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
