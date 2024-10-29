@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -7,7 +8,13 @@ public class Player : MonoBehaviour
 {   
     [SerializeField]
     private float _speed = 3.5f;
-    public GameObject laserPrefab;
+    [SerializeField]
+    public GameObject _laserPrefab;
+
+    [SerializeField]
+    private float fireRate = 0.5f;
+    [SerializeField]
+    private float _canFire = -1f;
 
 
     // Start is called before the first frame update
@@ -23,8 +30,11 @@ public class Player : MonoBehaviour
     {
         CalculateMovement();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > _canFire)
         {
+            _canFire = Time.time + fireRate;
+
+            Instantiate(_laserPrefab, transform.position + new Vector3(0, .78f, 0), Quaternion.identity);
             
         }
     }

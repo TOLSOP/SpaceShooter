@@ -408,7 +408,7 @@ Transform:
   m_GameObject: {fileID: 2039248665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.88, z: 0}
+  m_LocalPosition: {x: 0, y: -2.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -427,7 +427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 3.5
-  laserPrefab: {fileID: 6776544728907470593, guid: 26669fca55c999b4dbd416466b38dc2e, type: 3}
+  _laserPrefab: {fileID: 6776544728907470593, guid: 26669fca55c999b4dbd416466b38dc2e, type: 3}
+  fireRate: 0.15
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
